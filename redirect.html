@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirecting...</title>
+  <script>
+    window.onload = function() {
+      // Get the URL parameters sent by Shopify
+      const params = new URLSearchParams(window.location.search);
+      
+      // Extract the "code" parameter
+      const code = params.get("code");
+      
+      // Redirect back to your GitHub Pages URL with the code as a parameter
+      window.location.href = "https://andresvr23.github.io/AVRedirectURI/?code=" + code;
+    };
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>
